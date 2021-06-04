@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <link href="src/main/resources/static/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Reviews</title>
+</head>
+<body>
+<header>
+    <h1>Baby Song Reviews</h1>
+</header>
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
+    </ul>
+</main>
+<footer>
+    <small>&copy; Lee Powell 2021</small>
+</footer>
+</body>
+</html>
