@@ -15,13 +15,16 @@ public class ReviewRepository {
     public ReviewRepository(){
         Review babyShark = new Review(1L, "Baby Shark", "Great for annoying people " +
                 "who aren't parents.  Parents have become immune.",
-                "https://babysharklive.com/_nuxt/img/1725fda.png");
+                "resources/static/baby shark.png",
+                "https://youtu.be/XqZsoesa55w");
         Review downByTheBay = new Review(2L, "Down By The Bay", "I song that I " +
                 "sent out to my mother for mothers day because she would say the things in this song.",
-                "https://supersimple.com/wp-content/uploads/down-by-the-bay-800-800-300x300.jpg");
+                "https://supersimple.com/wp-content/uploads/down-by-the-bay-800-800-300x300.jpg",
+                "https://youtu.be/cAMbqRWqLXQ?t=3");
         Review peekaboo = new Review(3L, "Peekaboo", "A very fun, effective and " +
                 "catchy song that can easily be stuck in your head all day.",
-                "https://i.ytimg.com/vi/lVFj91Z1AfM/maxresdefault.jpg");
+                "https://i.ytimg.com/vi/lVFj91Z1AfM/maxresdefault.jpg",
+                "https://youtu.be/lVFj91Z1AfM?t=3");
 
         reviewsList.put(babyShark.getId(), babyShark);
         reviewsList.put(downByTheBay.getId(), downByTheBay);

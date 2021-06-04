@@ -1,6 +1,7 @@
 package org.wecancoeit.reviews;
 
 import org.springframework.stereotype.Controller;
+
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,11 @@ public class ReviewController {
 
     @Resource
     private ReviewRepository reviewRepo;
+
+// It made me do it.
+//    public ReviewController(ReviewRepository reviewRepo) {
+//        this.reviewRepo = reviewRepo;
+//    }
 
     @RequestMapping("/reviews")
     public String findAllReviews(Model model){

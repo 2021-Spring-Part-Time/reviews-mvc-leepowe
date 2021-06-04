@@ -6,6 +6,7 @@ public class Review {
     private String name;
     private String content;
     private String link;
+    private String video;
 
     public Long getId() {
         return id;
@@ -23,11 +24,18 @@ public class Review {
         return link;
     }
 
-    public Review(long id, String name, String content, String link) {
+    public String getVideo() {
+        return video;
+    }
+
+    public Review(long id, String name, String content, String link, String video) {
         this.id = id;
         this.name = name;
         this.content = content;
         this.link = link;
+        this.video = video;
     }
+
+
 
 }

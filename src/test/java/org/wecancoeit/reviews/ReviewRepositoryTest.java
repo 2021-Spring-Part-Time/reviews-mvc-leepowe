@@ -11,8 +11,8 @@ public class ReviewRepositoryTest {
 
     //can be run in any test without having to list for every test
     private ReviewRepository underTest;
-    private Review reviewOne = new Review(1L, "Review one Name", "Decription", "");
-    private Review reviewTwo = new Review(2L, "Review two Name", "Decription", "");
+    private Review reviewOne = new Review(1L, "Review one Name", "Decription", "", "");
+    private Review reviewTwo = new Review(2L, "Review two Name", "Decription", "", "");
 
     @Test
     public void shouldFindReviewOne(){
