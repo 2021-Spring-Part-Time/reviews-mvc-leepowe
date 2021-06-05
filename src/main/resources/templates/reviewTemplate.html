@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title th:text="${reviewModel.name}">A review</title>
+  </head>
+  <body>
+    <header>
+      <h1 th:text="${reviewModel.name}">A review</h1>
+    </header>
+
+    <main>
+      <ul>
+        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.name}"></li>
+          <li><img th:src="@{reviewModel.link}" /></li>
+        <li th:text="${reviewModel.link}">baby shark.png</li>
+        <li><img src="${reviewModel.link}" /></li>
+        <li th:href="${reviewModel.video}">Watch the video here.</li>
+        <li><a href="" </li>
+      </ul>
+
+      <h2 th:text="${reviewModel.content}"></h2>
+    </main>
+
+    <footer>
+      <small>&copy; Lee Powell 2021</small>
+    </footer>
+  </body>
+</html>
